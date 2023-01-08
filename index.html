@@ -24,7 +24,6 @@
         const firstChanged = document.getElementById('array-changed');
 
         const arr = ['asd' , 'as1231' , 'Юля, я люблю тебя!' , 'tkk', 'три' , '11'];
-
         firstOutput.innerHTML = arr;
 
         console.log(arr);
@@ -32,14 +31,15 @@
         const arrChanged = [];
 
         arr.forEach(function (item) {
-           if(item.length <= 3) {
+        if(item.length <= 3) {
             arrChanged.push(item);
-           }
+        }
         })
 
         console.log(arrChanged);
 
         firstChanged.innerHTML = arrChanged;
+       
     </script>
     
 </body>
