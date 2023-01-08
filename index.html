@@ -23,22 +23,23 @@
         const firstOutput = document.getElementById('array-first');
         const firstChanged = document.getElementById('array-changed');
 
-        const arr = ['asd' , 'as1231' , 'Юля, я люблю тебя!' , 'tkk', 'три' , '11'];
-        firstOutput.innerHTML = arr;
+        const arr = ['asd' , 'as1231' , 'Юля, я люблю тебя!' , 'tkk', 'три' , '11']; //создали первый массив
+        firstOutput.innerHTML = arr; //вывели на страницу
 
-        console.log(arr);
+        console.log(arr); //вывели в консоль
 
-        const arrChanged = [];
+        const arrChanged = []; //создаем пустой массив
 
+        //перебераем массив, ищем элементы, кол-вом символов <= 3
         arr.forEach(function (item) {
         if(item.length <= 3) {
-            arrChanged.push(item);
+            arrChanged.push(item); //сохраняем элементы в новый массив
         }
-        })
+        });
 
-        console.log(arrChanged);
+        console.log(arrChanged); //вывели измененный массив в консоль
 
-        firstChanged.innerHTML = arrChanged;
+        firstChanged.innerHTML = arrChanged; //вывели измененный массив в консоль на страницу
        
     </script>
     
